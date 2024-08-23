@@ -1,0 +1,83 @@
+.status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.status-card .count {
+  font-size: 2em;
+}
+.status-card.pending { background-color: #d6e4ff; }
+.status-card.working { background-color: #d3f1e4; }
+.status-card.completed { background-color: #ffe0ef; }
+
+.status-card.pending-active {
+  background-color: #2863ba; /* Color when pending card is clicked */
+  color: white;  
+}
+
+.status-card.working-active {
+  background-color: #198754; /* Color when working card is clicked */
+  color: white;
+}
+
+.status-card.completed-active {
+  background-color: #cf1b9f; /* Color when completed card is clicked */
+  color: #ffff; 
+}
+
+.status-card.pending-active h4{
+  color: #fff !important;
+}
+.status-card.pending-active h2{
+  color: #fff !important;
+}
+.pending-active.a-pending::after{
+  position: absolute;
+  content: '';
+  left: 45%;
+  bottom: -15px;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #2863ba transparent;
+  transform: rotate(179deg);transition: 1s;
+}
+
+
+.status-card.working-active h4{
+  color: #fff !important;
+}
+.status-card.working-active h2{
+  color: #fff !important;
+}
+.working-active.a-working::after{
+  position: absolute;
+  content: '';
+  left: 45%;
+  bottom: -15px;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #198754 transparent;
+  transform: rotate(179deg);transition: 1s;
+}
+
+.status-card.completed-active h4{
+  color: #fff !important;
+}
+.status-card.completed-active h2{
+  color: #fff !important;
+}
+.completed-active.a-completed::after{
+  position: absolute;
+  content: '';
+  left: 45%;
+  bottom: -15px;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #cf1b9f transparent;
+  transform: rotate(179deg);transition: 1s;
+}
