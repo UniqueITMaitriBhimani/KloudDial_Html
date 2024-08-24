@@ -7,9 +7,9 @@
     <meta name="description" content="Mofi admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Mofi admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Product List | Mofi - Premium Admin Template By Pixelstrap</title>
+    <link rel="icon" href="../assets/images/Png_KloudDial.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/Png_KloudDial.ico" type="image/x-icon">
+    <title>Help Desk List</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -222,7 +222,7 @@
                     <div class="container my-5">
                       <div class="row g-3">
                         <div class="col">
-                            <div class="status-card pending a-pending" onclick="changeColor(this, 'pending-active')">
+                            <div class="status-card pending a-pending" onclick="changeColor(this, 'pending-active')" >
                                 <h4>Pending Ticket</h4>
                                 <h2 class="count">53</h2>
                             </div>
@@ -242,43 +242,27 @@
                         </div>
                     </div>
                   </div>
-                    <div class="list-product-header">
-                      <div> 
-                        <div class="light-box"><a data-bs-toggle="collapse" href="#collapseProduct" role="button" aria-expanded="false" aria-controls="collapseProduct"><i class="filter-icon show" data-feather="filter"></i><i class="icon-close filter-close hide"></i></a></div><a class="btn btn-primary" href="add-products.html"><i class="fa fa-plus"></i>Add Product</a>
-                      </div>
-                      <div class="collapse" id="collapseProduct">
-                        <div class="card card-body list-product-body">
-                          <div class="row pt-10">
-                            <div class="col-md-2">
-
-                            </div>
-                            <div class="col-md-4">
-                                <input type="text" data-kt-customer-table-filter="search" class="form-control " placeholder="Ticket Number" />
-                    
-                                            
-                            </div>
-                            <div class="col-md-4">
-                               
-                    
-                                <select  class="form-select" data-allow-clear="true" tabindex="-1"  data-placeholder="Domain">
-                                    <option value="">Domain</option>
-                                    <option>Domain1</option>
-                                    <option>Domain2</option>
-                                    <option>Domain3</option>
-                                    <option>Domain4</option>
-
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-
-                            </div>
-                        </div>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="list-product">
-                      <table class="table" id="project-status">
+                <div  class="row">
+                  <div class="col-md-2">
+                  </div>
+                  <div class="col-md-4">
+                      <input type="text" data-kt-customer-table-filter="search" class="form-control " placeholder="Ticket Number" />
+                  </div>
+                  <div class="col-md-4">
+                      <select  class="form-select" data-allow-clear="true" tabindex="-1"  data-placeholder="Domain">
+                          <option value="">Domain</option>
+                          <option>Domain1</option>
+                          <option>Domain2</option>
+                          <option>Domain3</option>
+                          <option>Domain4</option>
+                      </select>
+                  </div>
+                  <div class="col-md-2">
+                  </div>
+                </div>
+                
+                    <div class="list-product pt-5" id="pending-table" >
+                      <table class="table">
                         <thead> 
                           <tr> 
                            
@@ -316,595 +300,148 @@
                             <td> 
                               <p class="f-light">BHavesh bhai </p> </td>
                             <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
+                              <button class="btn border border-1 p-2 rounded-2 text-center w-75 py-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                Approv
+                              </li>
+                              <li>
+                                View
+                              </li>    <li>
+                                Reject
+                              </li>    <li>
+                                Post Replay
+                              </li>
+                            </ul>
                             </td>
                           </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="product-removes">
-                          
-                            <td> 
-                              <p class="f-light">1001</p>
-                            
-                            </td>
-                            <td> 
-                              <p class="f-light">xyz</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Damage</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">Bhavesh bHaui</p>
-                            </td>
-                            <td> 
-                              <p class="f-light">12-12-12</p>
-                            </td>
-                            <td>   <p class="f-light">12-12-12</p></td>
-                            <td> 
-                              <p class="f-light">BHavesh bhai </p> </td>
-                            <td> 
-                              <div class="product-action"><a href="add-products.html"> 
-                                  <svg>    
-                                    <use href="../assets/svg/icon-sprite.svg#edit-content"></use>
-                                  </svg></a>
-                                <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#trash1"></use>
-                                </svg>
-                              </div>
-                            </td>
-                          </tr>
+                       
                         </tbody>
                       </table>
                     </div>
+                    <div class="list-product pt-5" id="working-table">
+                      <table class="table">
+                        <thead> 
+                          <tr> 
+                           
+                            <th> <span class="f-light f-w-600">Ticket No</span></th>
+                            <th> <span class="f-light f-w-600">Domain Name</span></th>
+                            <th> <span class="f-light f-w-600">Issue</span></th>
+                            <th> <span class="f-light f-w-600">Contact Details</span></th>
+                            <th> <span class="f-light f-w-600">Ticket Arrived</span></th>
+                            <th> <span class="f-light f-w-600">Ticket Solved</span></th>
+                            <th> <span class="f-light f-w-600">Property Name</span></th>
+                            <th> <span class="f-light f-w-600">Action</span></th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                        
+                          <tr class="product-removes">
+                          
+                            <td> 
+                              <p class="f-light">1001</p>
+                            
+                            </td>
+                            <td> 
+                              <p class="f-light">xyz</p>
+                            </td>
+                            <td> 
+                              <p class="f-light">Damage</p>
+                            </td>
+                            <td> 
+                              <p class="f-light">Bhavesh bHaui</p>
+                            </td>
+                            <td> 
+                              <p class="f-light">12-12-12</p>
+                            </td>
+                            <td>   <p class="f-light">12-12-12</p></td>
+                            <td> 
+                              <p class="f-light">BHavesh bhai </p> </td>
+                            <td> 
+                              <button class="btn border border-1 p-2 rounded-2 text-center w-75 py-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                Approv
+                              </li>
+                              <li>
+                                View
+                              </li>    <li>
+                                Reject
+                              </li>    <li>
+                                Post Replay
+                              </li>
+                            </ul>
+                            </td>
+                          </tr>
+                       
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="list-product pt-5" id="completed-table">
+                      <table class="table" >
+                        <thead> 
+                          <tr> 
+                           
+                            <th> <span class="f-light f-w-600">Ticket No</span></th>
+                            <th> <span class="f-light f-w-600">Domain Name</span></th>
+                            <th> <span class="f-light f-w-600">Issue</span></th>
+                            <th> <span class="f-light f-w-600">Contact Details</span></th>
+                            <th> <span class="f-light f-w-600">Ticket Arrived</span></th>
+                            <th> <span class="f-light f-w-600">Ticket Solved</span></th>
+                            <th> <span class="f-light f-w-600">Property Name</span></th>
+                            <th> <span class="f-light f-w-600">Action</span></th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                        
+                          <tr class="product-removes">
+                          
+                            <td> 
+                              <p class="f-light">1001</p>
+                            
+                            </td>
+                            <td> 
+                              <p class="f-light">xyz</p>
+                            </td>
+                            <td> 
+                              <p class="f-light">Damage</p>
+                            </td>
+                            <td> 
+                              <p class="f-light">Bhavesh bHaui</p>
+                            </td>
+                            <td> 
+                              <p class="f-light">12-12-12</p>
+                            </td>
+                            <td>   <p class="f-light">12-12-12</p></td>
+                            <td> 
+                              <p class="f-light">BHavesh bhai </p> </td>
+                            <td> 
+                              <button class="btn border border-1 p-2 rounded-2 text-center w-75 py-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                Approv
+                              </li>
+                              <li>
+                                View
+                              </li>    <li>
+                                Reject
+                              </li>    <li>
+                                Post Replay
+                              </li>
+                            </ul>
+                            </td>
+                          </tr>
+                       
+                        </tbody>
+                      </table>
+                    </div>
+                  
                   </div>
                 </div>
               </div>

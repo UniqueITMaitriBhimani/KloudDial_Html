@@ -11,12 +11,12 @@
 .status-card .count {
   font-size: 2em;
 }
-.status-card.pending { background-color: #d6e4ff; }
-.status-card.working { background-color: #d3f1e4; }
-.status-card.completed { background-color: #ffe0ef; }
+.status-card.pending { background-color: #ffcccc; }
+.status-card.working { background-color: #b3d1ff; }
+.status-card.completed { background-color: #d3f1e4; }
 
 .status-card.pending-active {
-  background-color: #2863ba; /* Color when pending card is clicked */
+  background-color: #E44141; /* Color when pending card is clicked */
   color: white;  
 }
 
@@ -26,7 +26,7 @@
 }
 
 .status-card.completed-active {
-  background-color: #cf1b9f; /* Color when completed card is clicked */
+  background-color: #0DA759; /* Color when completed card is clicked */
   color: #ffff; 
 }
 
@@ -43,7 +43,7 @@
   bottom: -15px;
   border-style: solid;
   border-width: 0 20px 20px 20px;
-  border-color: transparent transparent #2863ba transparent;
+  border-color: transparent transparent #E44141 transparent;
   transform: rotate(179deg);transition: 1s;
 }
 
@@ -78,6 +78,6 @@
   bottom: -15px;
   border-style: solid;
   border-width: 0 20px 20px 20px;
-  border-color: transparent transparent #cf1b9f transparent;
+  border-color: transparent transparent #0DA759 transparent;
   transform: rotate(179deg);transition: 1s;
 }

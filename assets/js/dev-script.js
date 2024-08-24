@@ -7,3 +7,7 @@ function changeColor(card, activeClass) {
 
     card.classList.add(activeClass);
 }
+
+function showTable() {
+  
+}
