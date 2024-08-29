@@ -195,281 +195,169 @@
         </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-            <!-- Container-fluid starts-->
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="card">
-                    <div class="card-header pb-0 card-no-border">
-                        <div class="row">
-                            <div class="col-md-3">
-                                  <select class="form-select" id="customState-wizard" required="">
-                                    <option selected="" disabled="" value="">Choose Domain Name...</option>
-                                    <option>www.google.com</option>
-                                    <option>www.facebook.com</option>
-                                    <option>www.youtube.com</option>
-                                  </select>
-                            </div> 
-                            <div class="col-md-3">
-                                <input class="form-control" id="customLastname" type="text" placeholder="By IP Address" required="">
-                            </div> 
-                            <div class="col-md-3">
-                                <input class="form-control" id="customLastname" type="text" placeholder="MAC Address" required="">
-                            </div> 
-                            <div class="col-md-3">
-                                <input class="form-control" id="customLastname" type="text" placeholder="Error Code" required="">
-                            </div>
-                            <div class="col-md-12 text-end mt-3">
-                                <button class="btn btn-primary"><span>Search</span></button>
-                                <button class="btn btn-dark"><span>Clear</span></button>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="card-body">
-                        <div class="dt-ext table-responsive theme-scrollbar">
-                          <table class="display" id="keytable">
-                            <thead>
-                              <tr>
-                                <th>No</th>
-                                <th>Domain Name</th>
-                                <th>Error Code</th>
-                                <th>IP Address</th>
-                                <th>Status</th>
-                                <th>Access DateTime</th>
-                                <th>Reboot DateTime</th>
-                                <th>Mac Address</th>
-                                <th>Action</th>
+          <div class="container-fluid">
+              <div class="card mt-4">
+                  <div class="row p-4">
+                    <div class="col-md-3">
+                      <select class="form-select" id="customState-wizard" required="">
+                        <option selected="" disabled="" value="">Choose Domain Name...</option>
+                        <option>www.google.com</option>
+                        <option>www.facebook.com</option>
+                        <option>www.youtube.com</option>
+                      </select>
+                </div> 
+                <div class="col-md-3">
+                    <input class="form-control" id="customLastname" type="text" placeholder="By IP Address" required="">
+                </div> 
+                <div class="col-md-3">
+                    <input class="form-control" id="customLastname" type="text" placeholder="MAC Address" required="">
+                </div> 
+                <div class="col-md-3">
+                    <input class="form-control" id="customLastname" type="text" placeholder="Error Code" required="">
+                </div>
+                  </div>
+                  <div class="text-end p-3 pt-0">
+                      <button class="btn btn-primary">Search</button>
+                      <button class="btn btn-dark">Clear</button>
+                  </div>
+              </div>
+              <div class="card mt-4">
+                  <div class="card-header d-flex justify-content-between">
+                      <h4 class="card-title mb-0">Error Repairing List</h4>
+                  </div>
+                  <div class="table-responsive add-project theme-scrollbar">
+                      <table class="table card-table table-vcenter text-nowrap text-center">
+                          <thead class="text-center">
+                              <tr class="fw-bold">
+                                  <th class="fw-bold">No</th>
+                                  <th class="fw-bold">Domain Name</th>
+                                  <th class="fw-bold">Error Code</th>
+                                  <th class="fw-bold">IP Address</th>
+                                  <th class="fw-bold">Status</th>
+                                  <th class="fw-bold">Access Time & Reboot Time</th>
+                                  <th class="fw-bold">MAC Address</th>
+                                  <th class="fw-bold">Action</th>
                               </tr>
-                            </thead>
-                            <tbody>
+                          </thead>
+                          <tbody>
                               <tr>
-                                <td>#1000</td>
-                                <td>Rica-Ecommerce Template</td>
-                                <td>Update</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-success">Resolved</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
+                                  <td>1</td>
+                                  <td>Domain</td>
+                                  <td>401</td>
+                                  <td>198.195.23.10</td>
+                                  <td> <span class="badge badge-danger">Not Solve</span></td>
+                                  <td>28/07/2024 19:05 AM & 28/07/2024 19:05 AM</td>
+                                  <td>12:12:12:12:11</td>
+                                  <td class="text-center">
+                                      <a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-sm btn-view" href="javascript:void(0)">
+                                        <i class="fa fa-eye"></i></a>
+                                      <a class="icon" href="javascript:void(0)"></a><a class="btn btn-success btn-sm" href="javascript:void(0)">
+                                        <i class="fa fa-ticket"></i>  
+                                      </a> <a class="icon"
+                                              href="javascript:void(0)"></a><a class="btn btn-danger btn-sm"
+                                                                               href="javascript:void(0)"><i class="fa fa-trash"></i>  </a>
+                                  </td>
                               </tr>
-                              <tr>
-                                <td>#1001</td>
-                                <td>Viho-React</td>
-                                <td>Report</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-danger">Pending</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1002</td>
-                                <td>Tivo-admin</td>
-                                <td>Update</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-danger">Pending</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1003</td>
-                                <td>Koho-Laravel</td>
-                                <td>Changes</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-primary">Open</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1004</td>
-                                <td>Wingo-React Js</td>
-                                <td>Changes</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-success">Resolved</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1005</td>
-                                <td>Mofi-Angular</td>
-                                <td>Update</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-success">Resolved</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1006</td>
-                                <td>Zeta Template</td>
-                                <td>Update</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-danger">Pending</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1007</td>
-                                <td>Xolo-admin Html</td>
-                                <td>Testing</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-danger">Pending</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1015</td>
-                                <td>Unice</td>
-                                <td>Testing</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-success">Resolved</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1020</td>
-                                <td>Rica-Ecommerce Template</td>
-                                <td>Update</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-success">Resolved</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1087</td>
-                                <td>Noxel</td>
-                                <td>Report</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-success">Resolved</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1098</td>
-                                <td>Jio</td>
-                                <td>Changes</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-primary">Open</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>#1048</td>
-                                <td>Fastkart</td>
-                                <td>Update</td>
-                                <td>127.0.1.1</td>
-                                <td> <span class="badge badge-primary">Open</span></td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>2018-03-22 08:30:58.7</td>
-                                <td>00-B0-D0-63-C2-26</td>
-                                <td> 
-                                  <ul class="action"> 
-                                    <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                    <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                            <tfoot>
-                              <tr>
-                                <th>Id</th>
-                                <th>Theme Name</th>
-                                <th>Task List</th>
-                                <th>Status</th>
-                                <th>Due date</th>
-                                <th>Review</th>
-                                <th>Action</th>
-                              </tr>
-                            </tfoot>
-                          </table>
+                              
+                          </tbody>
+                      </table>
+                      <!-- Records per page dropdown -->
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="records-per-page p-4">
+                            <label for="recordsPerPage" class="form-label me-2">Records per page:</label>
+                            <select class="form-select" id="recordsPerPage" onchange="changeRecordsPerPage()">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
                         </div>
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination p-4">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- View Error Modal -->
+<div class="modal fade" id="viewErrorModal" tabindex="-1" aria-labelledby="viewErrorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="viewErrorModalLabel">Error view Page</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                     <p><strong>Error Code:</strong> <span id="modalErrorCode"></span></p>
+                  </div>
+                  <div class="col-md-6">
+                    <p><strong>Status:</strong> <span id="modalStatus" class="badge badge-danger"></span></p>
+                  </div>
+                  <div class="col-md-12">
+                      <p><strong>Domain Name:</strong> <span id="modalDomainName"></span></p>
+                  </div>
+                  <div class="col-md-12">
+                      <p><strong>IP Address:</strong> <span id="modalIpAddress"></span></p>
+                  </div>
+                  <div class="col-md-12">
+                    <p><strong>MAC Address:</strong> <span id="modalMacAddress"></span></p>
+                  </div>
+                  <div class="col-md-12">
+                      <p><strong>Access Time:</strong> <span id="modalAccessTime"></span></p>
+                  </div>
+                  <div class="col-md-12">
+                      <p><strong>Reboot Time:</strong> <span id="modalRebootTime"></span></p>
+                  </div>
+                  <div class="col-md-12">
+                    <p><strong>Error Detected By:</strong> <span class="badge badge-info">Web</span><span class="badge badge-success">API</span></p>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-success">Ticket</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+                  </div>
+              </div>
+          </div>
+          <!-- Modal for Viewing Domain -->
+          <div class="modal fade" id="viewDomainModal" tabindex="-1" role="dialog" aria-labelledby="viewDomainModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="viewDomainModalLabel">View Domain</h5>
+                          <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button> -->
+                      </div>
+                      <div class="modal-body">
+                          <p><strong>Domain Name:</strong> <span id="modalDomainName"></span></p>
+                          <p><strong>IP Address:</strong> <span id="modalIpAddress"></span></p>
+                          <p><strong>MAC Address:</strong> <span id="modalMacAddress"></span></p>
+                          <p><strong>Last Modified:</strong> <span id="modalLastModified"></span></p>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
                   </div>
-                </div>
-                </div>
-                </div>
-                </div>      
+              </div>
+          </div>
+      </div>
 
       <!-- latest jquery-->
     <script src="assets/js/jquery.min.js"></script>
@@ -522,5 +410,33 @@
     <script src="assets/js/theme-customizer/customizer.js"></script>
     <!-- Plugin used-->
     <script>new WOW().init();</script>
+    <script>
+    $(document).ready(function() {
+      // Handle click event for "view" buttons
+      $('.btn-view').click(function() {
+          var $row = $(this).closest('tr');
+          var domainName = $row.find('td:nth-child(2)').text().trim();  // Domain Name
+          var errorCode = $row.find('td:nth-child(3)').text().trim();   // Error Code
+          var ipAddress = $row.find('td:nth-child(4)').text().trim();   // IP Address
+          var status = $row.find('td:nth-child(5)').text().trim();      // Status
+          var accessTime = $row.find('td:nth-child(6)').text().trim();  // Access Time
+          var rebootTime = $row.find('td:nth-child(7)').text().trim();  // Reboot Time
+          var macAddress = $row.find('td:nth-child(8)').text().trim();  // MAC Address
+  
+          // Populate modal with data
+          $('#modalDomainName').text(domainName);
+          $('#modalErrorCode').text(errorCode);
+          $('#modalIpAddress').text(ipAddress);
+          $('#modalStatus').text(status);
+          $('#modalAccessTime').text(accessTime);
+          $('#modalRebootTime').text(rebootTime);
+          $('#modalMacAddress').text(macAddress);
+  
+          // Show the modal
+          $('#viewErrorModal').modal('show');
+      });
+  });
+</script>
+  
     </body>
 </html>     
