@@ -160,7 +160,7 @@
                   <span class="lan-3">Dashboard</span></a>
                 
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack">    </i><a class="sidebar-link sidebar-title link-nav" href="">
+                <li class="sidebar-list"><i class="fa fa-thumb-tack">    </i><a class="sidebar-link sidebar-title link-nav" href="User.html">
                   <svg class="stroke-icon">
                     <use href="assets/svg/icon-sprite.svg#stroke-project"></use>
                   </svg>
@@ -192,21 +192,21 @@
                   </svg><span>Error Reports</span></a>
              
               </li>
-              <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="javascript:void(0)">
+              <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="CreateTicket.html">
                 <svg class="stroke-icon">
                   <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                 </svg>
                 <svg class="fill-icon">
                   <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
-                </svg><span>Create Ticket</span></a>
+                </svg><span>Generate Ticket</span></a>
            
-              </li> 
+              </li>  
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="Chat.html">
                 <svg class="stroke-icon">
-                  <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                  <use href="../assets/svg/icon-sprite.svg#stroke-chat"></use>
                 </svg>
                 <svg class="fill-icon">
-                  <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
+                  <use href="../assets/svg/icon-sprite.svg#fill-chat"></use>
                 </svg><span>Chat</span></a>
            
               </li>
@@ -224,27 +224,21 @@
     <div class="page-body">
         <div class="container-fluid">
             <div class="card mt-4">
-                <div class="row p-4">
-                    <div class="col-md-4">
-                        <div class="form-floating">
-                            <input class="form-control" id="floatingPassword" type="text" placeholder="Domain Name">
-                            <label for="floatingPassword" class="ms-2">Domain Name</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-floating">
-                            <input class="form-control" id="floatingPassword" type="text" placeholder="Ip Address">
-                            <label for="floatingPassword" class="ms-2">Ip Address</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-floating">
-                            <input class="form-control" id="floatingPassword" type="text" placeholder="mac Address">
-                            <label for="floatingPassword" class="ms-2">mac Address</label>
-                        </div>
-                    </div>
+                <div class="row p-3">
+                  <div class="col-md-4">
+                    <label>Domain Name</label>
+                    <input class="form-control" type="text" placeholder="Domain Name">     
+                  </div>
+                  <div class="col-md-4">
+                    <label>Ip Address</label>
+                    <input class="form-control" type="text" placeholder="Ip Address"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label>mac Address</label>
+                    <input class="form-control" type="text" placeholder="mac Address">      
+                  </div>
                 </div>
-                <div class="text-end p-3 pt-0">
+                <div class="text-end mb-3 me-3">
                     <button class="btn btn-primary">Search</button>
                     <button class="btn btn-dark">Clear</button>
                 </div>
@@ -296,6 +290,7 @@
                     <table class="table card-table table-vcenter text-nowrap text-center">
                         <thead class="text-center">
                             <tr class="fw-bold">
+                                <th class="fw-bold">No</th>
                                 <th class="fw-bold">Domain Name</th>
                                 <th class="fw-bold">IP Address</th>
                                 <th class="fw-bold">MAC Address</th>
@@ -306,13 +301,12 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>1</td>
                                 <td>theuniqueitsolution.com</td>
                                 <td>198.195.23.10</td>
                                 <td>12:12:12:12:11</td>
-                                <td>28/07/2024
-                                    19:05 AM
-                                </td>
-                                <td>restart</td>
+                                <td>28/07/2024 19:05 AM</td>
+                                <td><span class="badge badge-danger">restart</span></td>
                                 <td class="text-center">
                                     <a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-sm btn-view" href="javascript:void(0)">
                                         <i class="fa fa-eye"></i></a>
@@ -326,6 +320,32 @@
                             
                         </tbody>
                     </table>
+                    <!-- Records per page dropdown -->
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div class="records-per-page p-4">
+                          <label for="recordsPerPage" class="form-label me-2">Records per page:</label>
+                          <select class="form-select" id="recordsPerPage">
+                              <option value="10">10</option>
+                              <option value="20">20</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                          </select>
+                      </div>
+                      <!-- Pagination -->
+                      <nav aria-label="Page navigation example">
+                          <ul class="pagination p-4">
+                              <li class="page-item disabled">
+                                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                  <a class="page-link" href="#">Next</a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
                 </div>
             </div>
         </div>
@@ -340,10 +360,10 @@
                         </button> -->
                     </div>
                     <div class="modal-body">
-                        <p><strong>Domain Name:</strong> <span id="modalDomainName"></span></p>
-                        <p><strong>IP Address:</strong> <span id="modalIpAddress"></span></p>
-                        <p><strong>MAC Address:</strong> <span id="modalMacAddress"></span></p>
-                        <p><strong>Last Modified:</strong> <span id="modalLastModified"></span></p>
+                        <p><strong>Domain Name:</strong> <input type="text" id="modalDomainName" class="form-control" disabled></p>
+                        <p><strong>IP Address:</strong> <input type="text" id="modalIpAddress" class="form-control" disabled></span></p>
+                        <p><strong>MAC Address:</strong> <input type="text" id="modalMacAddress" class="form-control" disabled></p>
+                        <p><strong>Last Modified:</strong> <input type="text" id="modalLastModified" class="form-control" disabled></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -397,15 +417,15 @@
             // Handle click event for "view" buttons
             $('.btn-view').click(function() {
                 var $row = $(this).closest('tr');
-                var domainName = $row.find('td:nth-child(1)').text().trim();
-                var ipAddress = $row.find('td:nth-child(2)').text().trim();
-                var macAddress = $row.find('td:nth-child(3)').text().trim();
-                var lastModified = $row.find('td:nth-child(4)').text().trim();
+                var domainName = $row.find('td:nth-child(2)').text().trim();
+                var ipAddress = $row.find('td:nth-child(3)').text().trim();
+                var macAddress = $row.find('td:nth-child(4)').text().trim();
+                var lastModified = $row.find('td:nth-child(5)').text().trim();
 
-                $('#modalDomainName').text(domainName);
-                $('#modalIpAddress').text(ipAddress);
-                $('#modalMacAddress').text(macAddress);
-                $('#modalLastModified').text(lastModified);
+                $('#modalDomainName').val(domainName);
+                $('#modalIpAddress').val(ipAddress);
+                $('#modalMacAddress').val(macAddress);
+                $('#modalLastModified').val(lastModified);
 
                 $('#viewDomainModal').modal('show');
             });
