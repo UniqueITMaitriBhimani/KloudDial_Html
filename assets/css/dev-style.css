@@ -119,12 +119,19 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+   .headerpage {
+         margin-left: 0px !important;
+            width: 100% !important; 
+        }
 
-
-
-
-
-
+        #card {
+          width: 55% ;
+          height: 160px ;
+          border-radius: 20px;
+      }
+.domain-name-dropdown{
+  height: 58px;
+}
 
 .status-card {
   display: flex;
