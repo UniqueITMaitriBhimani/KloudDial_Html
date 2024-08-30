@@ -13852,6 +13852,12 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
+#trustCheckbox:checked{
+  background-color: #7A70BA;
+}
+.authenticate input {
+  margin-top: 12px;
+}
 .authenticate span:nth-of-type(1) {
   margin-top: 12px;
 }

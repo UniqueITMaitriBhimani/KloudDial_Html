@@ -44,24 +44,27 @@
               <div class="login-main pt-5"> 
 
                 <div class="authenticate">
-                    <h4>Verification code</h4><span>We've sent a verification code to</span><span>+91********70</span>
+                    <h4>Verification code</h4><span>Your account is protected with Two factor Authentication.</span><span> You will need your Authentication device to proceed.</span>
 
                 <form class="row">
                     <div class="col"> 
-                      <h5>Your OTP Code here:</h5>
+                      <h6>Enter your verification or recovery code</h6>
                     </div>
                     <div class="col otp-generate">
-                      <input class="form-control code-input" type="text" maxlength="1" pattern="[0-9]" required="">
-                      <input class="form-control code-input" type="text" maxlength="1" pattern="[0-9]" required="">
-                      <input class="form-control code-input" type="text" maxlength="1" pattern="[0-9]" required="">
-                      <input class="form-control code-input" type="text" maxlength="1" pattern="[0-9]" required="">
-                      <input class="form-control code-input" type="text" maxlength="1" pattern="[0-9]" required="">
-                      <input class="form-control code-input" type="text" maxlength="1" pattern="[0-9]" required="">
+                      <input class="form-control code-input border-primary" type="text" maxlength="1" pattern="[0-9]" required="">
+                      <input class="form-control code-input border-primary" type="text" maxlength="1" pattern="[0-9]" required="">
+                      <input class="form-control code-input border-primary" type="text" maxlength="1" pattern="[0-9]" required="">
+                      <input class="form-control code-input border-primary" type="text" maxlength="1" pattern="[0-9]" required="">
+                      <input class="form-control code-input border-primary" type="text" maxlength="1" pattern="[0-9]" required="">
+                      <input class="form-control code-input border-primary" type="text" maxlength="1" pattern="[0-9]" required="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <input type="checkbox" class="form-check-input mx-2" id="trustCheckbox" name="trustCheckbox" />
+                      <span for="trustCheckbox">Trust this computer for 30 days</span>
                     </div>
                     <div class="col"> 
-                      <button class="btn btn-primary w-100" type="submit">Verify</button>
+                      <button class="btn btn-primary w-100 mt-2" type="submit">Verify</button>
                     </div>
-                    <div> <span>Not received your code?</span><span><a href="javascript:void(0)">Resend </a>OR <a href="javascript:void(0)">Call  </a></span></div>
                   </form>
                   </div>
               </div>
