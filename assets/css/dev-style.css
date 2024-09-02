@@ -50,7 +50,6 @@
 }
 
 
-
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -120,12 +119,19 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+   .headerpage {
+         margin-left: 0px !important;
+            width: 100% !important; 
+        }
 
-
-
-
-
-
+        #card {
+          width: 55% ;
+          height: 160px ;
+          border-radius: 20px;
+      }
+.domain-name-dropdown{
+  height: 58px;
+}
 
 .status-card {
   display: flex;
@@ -135,12 +141,14 @@
   border-radius: 8px;
   color: #000;
   font-weight: bold;
+  cursor: pointer; 
+ 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .status-card .count {
   font-size: 2em;
 }
-.status-card.pending { background-color: #ffcccc; }
+.status-card.pending { background-color: #F6A1A1; }
 .status-card.working { background-color: #b3d1ff; }
 .status-card.completed { background-color: #d3f1e4; }
 
@@ -150,7 +158,7 @@
 }
 
 .status-card.working-active {
-  background-color: #198754; /* Color when working card is clicked */
+  background-color: #007bff; /* Color when working card is clicked */
   color: white;
 }
 
@@ -190,7 +198,7 @@
   bottom: -15px;
   border-style: solid;
   border-width: 0 20px 20px 20px;
-  border-color: transparent transparent #198754 transparent;
+  border-color: transparent transparent #007bff transparent;
   transform: rotate(179deg);transition: 1s;
 }
 
