@@ -218,3 +218,17 @@
   border-color: transparent transparent #0DA759 transparent;
   transform: rotate(179deg);transition: 1s;
 }
+
+
+
+
+
+
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}

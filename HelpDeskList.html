@@ -152,7 +152,6 @@
           <div class="logo-wrapper"><a href="Dashboard.html"><img class="img-fluid"
                 src="assets/images/logo/Png_KloudDial.png" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
-
           </div>
           <div class="logo-icon-wrapper"><a href="Dashboard.html"><img class="img-fluid"
                 src="assets/images/logo/logo-icon.png" alt=""></a></div>
@@ -162,27 +161,13 @@
               <ul class="sidebar-links pt-5" id="simple-bar">
                 <li class="back-btn"><a href="Dashboard.html"><img class="img-fluid"
                       src="assets/images/logo/logo-icon.png" alt=""></a>
-
                 </li>
-
-
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
                     href="Dashboard.html">
                     <svg class="stroke-icon">
                       <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
                     </svg>
                     <span class="lan-3">Dashboard</span></a>
-
-                </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title link-nav"
-                    href="User.html">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-project"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-project"></use>
-                    </svg><span>User</span></a>
-
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
                     href="Domain.html">
@@ -192,15 +177,6 @@
                     <svg class="fill-icon">
                       <use href="assets/svg/icon-sprite.svg#fill-file"></use>
                     </svg><span>Domain</span></a></li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title link-nav"
-                    href="HelpDeskList.html">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-board"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-board"></use>
-                    </svg><span>Help Desk</span></a>
-                  </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
                     href="ErrorReporting.html">
                     <svg class="stroke-icon">
@@ -209,23 +185,34 @@
                     <svg class="fill-icon">
                       <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
                     </svg><span>Error Reports</span></a>
-
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
-                    href="CreateTicket.html">
+
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
+                    href="javascript:void(0)">
                     <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                      <use href="../assets/svg/icon-sprite.svg#stroke-project"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
-                    </svg><span>Create Ticket</span></a>
-
+                      <use href="../assets/svg/icon-sprite.svg#fill-project"></use>
+                    </svg><span>Help Desk </span></a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="HelpDeskList.html">Ticket Traking</a></li>
+                    <li><a href="CreateTicket.html">CreateTicket</a></li>
+                    <li><a href="Reject.html">Rejected Ticket</a></li>
+                  </ul>
                 </li>
 
-
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title link-nav"
+                    href="User.html">
+                    <svg class="stroke-icon">
+                      <use href="assets/svg/icon-sprite.svg#stroke-project"></use>
+                    </svg>
+                    <svg class="fill-icon">
+                      <use href="assets/svg/icon-sprite.svg#fill-project"></use>
+                    </svg><span>User</span></a>
+                </li>
               </ul>
             </div>
-
           </nav>
         </div>
       </div>
@@ -242,7 +229,9 @@
                   <div class="col">
                     <div class="status-card pending a-pending"
                       onclick="changeColor(this, 'pending-active', 'pending-table')">
-                      <h4>Pending Ticket</h4>
+                      <h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                        <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                      </svg>Pending Ticket</h4>
                       <h2 class="count">53</h2>
                     </div>
                   </div>
@@ -258,7 +247,7 @@
                   <div class="col">
                     <div class="status-card completed a-completed"
                       onclick="changeColor(this, 'completed-active', 'completed-table')">
-                      <h4>Completed Tickets</h4>
+                      <h4><i class="fa fa-check-square-o" aria-hidden="true"></i>Completed Tickets</h4>
                       <h2 class="count">46</h2>
                     </div>
                   </div>
@@ -275,42 +264,63 @@
                     <div class="container-fluid row mb-3">
                       <!-- Ticket Number Filter-->
                       <div class="col-md-2">
-                        <input type="text" data-kt-customer-table-filter="search"
-                          class="form-control border border-auto" placeholder="Ticket Number" />
-                      </div>
-                      <!-- Domain Filter -->
+                        <div class="form-floating">
+                          <input type="text" data-kt-customer-table-filter="search" class="form-control"
+                            placeholder="Ticket Number" />
+                          <label for="floatingPassword">Ticket Number</label>
+                        </div>
+
+
+                      </div>   
                       <div class="col-md-2">
-                        <select class="form-select border border-auto" data-allow-clear="true" tabindex="-1"
-                          data-placeholder="Domain">
-                          <option value="">Domain</option>
+                        <select class="form-select domain-name-dropdown" id="customState-wizard" required="">
+                          <option selected="" disabled="" value="">Domain</option>
                           <option>Domain1</option>
                           <option>Domain2</option>
                           <option>Domain3</option>
-                          <option>Domain4</option>
+                          <option>Domain4</option>                          
                         </select>
+                      </div>               
+                   
+                      <div class="col-md-2">                     
+                          <select class="form-select domain-name-dropdown" id="customState-wizard" required="">
+                            <option selected="" disabled="" value="">Issue</option>
+                            <option>Damage</option>
+                            <option>Break</option>
+                          </select>                      
+                      </div>
+
+                      <div class="col-md-2">
+                        <button class="dropdown-toggle form-select domain-name-dropdown" type="button" id="customState-wizard" data-bs-toggle="dropdown" aria-expanded="false">
+                          Accrued By
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li ><a class="dropdown-item" href="#" data-value="wordpress"><span class="circle bg-primary"></span> WordPress</a></li>
+                          <li><a class="dropdown-item" href="#" data-value="api"><span class="circle bg-info"></span> API</a></li>
+                          <li><a class="dropdown-item" href="#" data-value="webscraping"><span class="circle bg-danger"></span> Web Scraping</a></li>
+                          <li><a class="dropdown-item" href="#" data-value="admin"><span class="circle bg-success"></span> Admin Created</a></li>
+                      </ul>
+                      <input type="hidden" id="selectedValue" name="selectedValue" value="">
+                    </div>
+                    
+                 
+                      <div class="col-md-2">                       
+                        <select class="form-select domain-name-dropdown" id="customState-wizard" required="">
+                            <option value="">Accured By</option>
+                            <option>WordPress</option>
+                            <option>API</option>
+                            <option>Web Scrapping</option>
+                            <option>Admin Created</option>
+                          </select>                       
                       </div>
                       <div class="col-md-2">
-                        <select class="form-select border border-auto" data-allow-clear="true" tabindex="-1"
-                          data-placeholder="Issue">
-                          <option value="">Issue</option>
-                          <option>Damage</option>
-                          <option>Break</option>
-                        </select>
+                        <div class="form-floating"> <input type="text" data-kt-customer-table-filter="search"
+                            class="form-control" placeholder="Property Name" />
+                          <label for="floatingPassword"> Property Name</label>
+
+                        </div>
                       </div>
-                      <div class="col-md-2">
-                        <select class="form-select border border-auto" data-allow-clear="true" tabindex="-1"
-                          data-placeholder="Accured By">
-                          <option value="">Accured By</option>
-                          <option>WordPress</option>
-                          <option>API</option>
-                          <option>Web Scrapping</option>
-                          <option>Admin Created</option>
-                        </select>
-                      </div>
-                      <div class="col-md-2">
-                        <input type="text" data-kt-customer-table-filter="search"
-                          class="form-control border border-auto" placeholder="Property Name" />
-                      </div>
+
                     </div>
                     <!-- <div>
                       <div class=" d-flex justify-content-between p-2 pt-3">
@@ -325,6 +335,7 @@
                             <th class="fw-bold">Ticket No</th>
                             <th class="fw-bold">Domain Name</th>
                             <th class="fw-bold">Issue</th>
+                            <th class="fw-bold">Accured By</th>
                             <th class="fw-bold">Contact Details</th>
                             <th class="fw-bold">Ticket Arrived</th>
                             <th class="fw-bold">Ticket Solved</th>
@@ -345,6 +356,9 @@
                             </td>
                             <td>
                               <p class="f-light">Damage</p>
+                            </td>
+                            <td>
+                              <span class="badge badge-primary">WordPress</span>
                             </td>
                             <td>
                               <p class="f-light">Bhavesh bHaui</p>
@@ -437,6 +451,9 @@
                             </td>
                             <td>
                               <p class="f-light">Damage</p>
+                            </td>
+                            <td>
+                              <span class="badge badge-primary">WordPress</span>
                             </td>
                             <td>
                               <p class="f-light">Bhavesh bHaui</p>
@@ -677,6 +694,7 @@
                                       d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
                                   </svg>
                                 </button>
+                              
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="#">Approve</a></li>
                                   <li><a class="dropdown-item" href="#">View</a></li>

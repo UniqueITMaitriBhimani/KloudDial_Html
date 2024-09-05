@@ -35,3 +35,12 @@ function changeColor(card, activeClass, tableId) {
       }
     });
   });
+
+
+
+
+
+
+
+
+
